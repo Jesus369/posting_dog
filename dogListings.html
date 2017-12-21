@@ -1,0 +1,63 @@
+<html>
+
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">DogDojo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Listings</a>
+      <a class="nav-item nav-link" href="#">Post</a>
+      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+    </div>
+    </div>
+  </nav>
+
+
+  <div id="listingsHolder">
+  </div>
+
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBAxHG3aVimAhnmCdk03IiBu0HXTe3Rbok",
+    authDomain: "dojo-dog.firebaseapp.com",
+    databaseURL: "https://dojo-dog.firebaseio.com",
+    projectId: "dojo-dog",
+    storageBucket: "dojo-dog.appspot.com",
+    messagingSenderId: "654699436344"
+  };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="firebase.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="classes.js"></script>
+  <script src="dojo.js"></script>
+  <script src="dogListings.js"></script>
+
+</html>

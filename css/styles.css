@@ -1,0 +1,77 @@
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.grandparentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.postings {
+  background-color: #F0F0F0;
+  border: 1px solid #9B9999;
+  box-shadow: 0 0 0 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  padding: 1em;
+  position: relative;
+  left: 5em;
+  width: 25%;
+}
+
+.postInput {
+  border: 2px solid #B5B0B0;
+}
+
+.descriptionInput {
+  border: 2px solid #B5B0B0;
+  height: 20em;
+}
+
+.priceInput {
+  border: 2px solid #B5B0B0;
+}
+
+.postButton {
+  border-radius: 10px;
+  border-color: #646161;
+  margin: 1em 0 1em 0;
+}
+
+.postHolder {
+  background-color: #F0F0F0;
+  border: 1px solid #9B9999;
+  box-shadow: 0 0 0 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  position: relative;
+  left: 5em;
+  width: 25%;
+}
+
+.preview {
+  background-color: #F0F0F0;
+  border: 1px solid #9B9999;
+  box-shadow: 0 0 0 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5em 0 10em 4em;
+  padding: 1em;
+  position: relative;
+  left: 5em;
+  width: 25%;
+}

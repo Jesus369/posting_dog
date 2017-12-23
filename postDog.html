@@ -12,7 +12,6 @@
 
 <body>
 
-    <img class="bg" src="http://wallpapercanyon.com/wp-content/uploads/2016/01/Dog-Wallpaper-13.jpg">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">DogDojo</a>
@@ -32,9 +31,10 @@
   <div class="grandparentContainer">
 
     <div id="postForm" class="postings">
+      Title
+      <input id="title" class="postInput"/>
       Name
-      <input id="name" class="postInput"></input>
-      <br>
+      <input id="name" class="postInput"/>
       Breed
       <select name="favorite" id="breed" class="postinput">
         <option>Husky</option>
@@ -45,25 +45,24 @@
         <option>Snowzer</option>
       </select>
       <br>
-
+      Upload Doggy Image
       <label class="upload-group">
         Upload
       <input type="file" class="upload-group" id="file">
       </label>
-      <button class="submitImg" id="uploadButton">SUBMIT</button>
-
 
       <br>
       Description
       <textarea id="description" class="descriptionInput"></textarea>
+
       <br>
       Rehoming Fee
       <input id="price" class="priceInput" size="5"></input>
-      <br>
+
       Phone Number
       <input type="text" id="phoneNumber" class="postInput" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$"/>
       <div id="phoneReq"></div>
-      <br>
+
       Email Address
       <input id="emailAddress" class="postInput" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"></input>
       <div id="emailReq"></div>
@@ -83,10 +82,8 @@
 
   </div>
 
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-
-
+  <div id = "emptyDiv">
+  </div>
 
 </body>
 
@@ -110,10 +107,8 @@
     firebase.initializeApp(config);
   </script>
 
-  <script src="firebase.js"></script>
   <script src="jquery-3.2.1.min.js"></script>
   <script src="classes.js"></script>
   <script src="dojo.js"></script>
 
 </html>
-

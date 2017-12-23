@@ -1,0 +1,16 @@
+img {
+	width: 400px;
+	height: 400px;
+}
+
+.listingsContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.rowContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 2em;
+}
